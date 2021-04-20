@@ -1,0 +1,36 @@
+@import '../../../style/variables.scss';
+
+.o-button{
+    padding: 0px 5px;
+    color: white;
+    background: $gray;
+    border: none;
+    border-radius: 5px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.o-button-img{
+    border: none;
+    background: none;
+    outline:none;
+    transition: all 0.3s;
+    cursor: pointer;
+    
+    img{
+        width: 20px;
+        height: 20px;
+    }
+
+    &:hover{
+        img{
+            width: 22px;
+            height: 22px;
+            filter: invert(100%);
+        }
+    }
+
+    &:focus, &:active{
+        border: none;
+    }
+}

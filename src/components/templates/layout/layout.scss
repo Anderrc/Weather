@@ -1,0 +1,27 @@
+@import '../../../style/variables.scss';
+
+*,body{
+    padding: 0;
+    margin: 0;
+}
+
+.t-layout{
+    min-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    
+
+    .t-layout-aside{
+        width: 30vw;
+        min-height: 100vh;
+        background: $blue;
+    }
+
+    .t-layout-container{
+        width: 70vw;
+        min-height: 100vh;
+        background: $darkblue;
+    }
+}
+
