@@ -9,7 +9,8 @@ pipeline {
 
     stage('build') {
       steps {
-        powershell(script: 'npm run build', returnStatus: true)
+        sh 'npm run build'
+        bat(script: 'npm run build', encoding: 'npm run build')
       }
     }
 
