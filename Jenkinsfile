@@ -8,8 +8,19 @@ pipeline {
     }
 
     stage('Install') {
-      steps {
-        sh 'npm install'
+      parallel {
+        stage('Install') {
+          steps {
+            sh 'npm install'
+          }
+        }
+
+        stage('') {
+          steps {
+            powershell 'npm install'
+          }
+        }
+
       }
     }
 
