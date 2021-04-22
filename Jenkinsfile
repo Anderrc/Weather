@@ -9,7 +9,7 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'npm run build'
+        build(job: 'build ', quietPeriod: 3)
       }
     }
 
