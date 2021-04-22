@@ -1,5 +1,6 @@
 import React from 'react';
 import Aside from '../../organims/aside/aside';
+import MoreInformation from '../../organims/more-information/more-information';
 import './layout.scss';
 
 const Layout = props => {
@@ -10,7 +11,7 @@ const Layout = props => {
                 <Aside />
             </div>
             <div className="t-layout-container">
-                { children }
+                <MoreInformation />
             </div>
         </div>
      );

@@ -1,3 +1,26 @@
+@font-face {
+    font-family: "Raleway Thin";
+    src: url("./font/Raleway-VariableFont_wght.ttf");
+}
+
 $blue: #1E213A;
 $darkblue: #100E1D;
 $gray: #6E707A;
+$white: #E7E7EB ;
+$yellow: #FFEC65;
+
+.dato{
+    font-family: 'Raleway Thin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    color: $white;
+}
+.ext{
+    font-family: 'Raleway Thin';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    color: $white;
+}

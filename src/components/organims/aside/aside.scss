@@ -1,10 +1,55 @@
-
+@import '../../../style/variables.scss';
 .o-aside{
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: space-between;
 
     .o-aside-buttons{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+    .o-aside-temp{
+
+        .o-aside-tem-number{
+            font-family: 'Raleway Thin';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 144px;
+            line-height: 169px;
+            color: $white;
+            
+            .o-aside-tem-number-prefijo{
+                font-family: 'Raleway Thin';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 48px;
+            }
+        }
+
+    }
+    
+    .o-aside-time{
+        p{
+            font-family: 'Raleway Thin';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 42px;
+            color: #E7E7EB;
+        }
+    }
+    .o-aside-date{
+        margin-top: 20px ;
+        p{
+            font-family: 'Raleway Thin';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #E7E7EB;
+        }
     }
 }
