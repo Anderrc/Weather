@@ -9,7 +9,6 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'npm run build'
         bat(script: 'npm run build', encoding: 'npm run build')
       }
     }
