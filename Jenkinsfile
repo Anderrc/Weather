@@ -9,7 +9,7 @@ pipeline {
 
     stage('build') {
       steps {
-        powershell(script: 'npm run build', encoding: 'npm run build', returnStatus: true)
+        powershell(script: 'npm run build', returnStatus: true)
       }
     }
 
