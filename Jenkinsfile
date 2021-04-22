@@ -7,9 +7,15 @@ pipeline {
       }
     }
 
-    stage('build') {
+    stage('Install') {
       steps {
-        bat(script: 'npm run build', encoding: 'npm run build')
+        sh 'npm install'
+      }
+    }
+
+    stage('Build') {
+      steps {
+        sh 'npm run build'
       }
     }
 
