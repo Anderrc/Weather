@@ -7,7 +7,7 @@ import ImgState from '../../atoms/img-state/img-state';
 import air from '../../../img/near_me_white_24dp.svg';
 
 const MoreInformation = props => {
-    const [locationActual, setLocationActual] = useContext(AppContext);
+    const [locationActual] = useContext(AppContext);
 
     const rot = {
         transform: `rotate(${locationActual['consolidated_weather'][0].wind_direction}deg)`

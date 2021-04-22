@@ -3,7 +3,6 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    // align-items: center;
     justify-content: space-between;
 
     .o-aside-buttons{
@@ -32,6 +31,7 @@
     }
     
     .o-aside-time{
+
         p{
             font-family: 'Raleway Thin';
             font-style: normal;
@@ -43,6 +43,7 @@
     }
     .o-aside-date{
         margin-top: 20px ;
+
         p{
             font-family: 'Raleway Thin';
             font-style: normal;
@@ -51,5 +52,70 @@
             line-height: 21px;
             color: #E7E7EB;
         }
+    }
+
+    .o-aside-search{
+
+        .o-aside-search-input{
+            padding: 10px;
+            background-color: $blue;
+            color: $white;
+            outline: none;
+            border: 1px solid $white;
+            margin: 10px;
+
+            @include from($x-large){
+               font-size: 20px;
+            }
+    
+        }
+
+        .o-aside-search-button{
+            padding: 10px;
+            background-color: #3C47E9;
+            color: $white;
+            outline: none;
+            border:1px solid $white;
+            @include from($x-large){
+                font-size: 20px;
+             }
+        }
+
+      
+    }
+    .o-aside-result{
+        display: flex;
+        flex-direction: column;
+
+        .o-aside-result-button{
+            padding: 10px !important; 
+            height: auto;
+            text-align: left;
+            font-family: 'Raleway Thin';
+            margin: 4px;
+            font-size: 18px;
+            background-color: $darkblue;
+            display: flex;
+            justify-content: space-between;
+
+
+            @include from($x-large){
+                font-size: 20px;
+             }
+
+            .o-aside-result-button-icon{
+
+            }
+        }
+    }
+
+    .o-aside-city{
+        font-family: 'Raleway Thin';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #E7E7EB;
+        margin: 10px;
     }
 }

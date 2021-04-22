@@ -24,3 +24,16 @@ $yellow: #FFEC65;
     font-size: 36px;
     color: $white;
 }
+
+$small: 340px;
+$semi-small: 695px;
+$medium: 761px;
+$large: 960px;
+$x-large: 1023px;
+$xx-large: 1260px;
+
+@mixin from($size) {
+    @media (max-width: $size) {
+        @content;
+    }
+}

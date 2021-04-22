@@ -4,7 +4,6 @@ import MoreInformation from '../../organims/more-information/more-information';
 import './layout.scss';
 
 const Layout = props => {
-    const { children } = props;
     return ( 
         <div className="t-layout">
             <div className="t-layout-aside">
