@@ -35,7 +35,7 @@ const Index = props => {
         woeid: 368148,
     });
     return ( 
-
+        
         <AppContext.Provider value={[locationActual, setLocationActual]}>
             <Layout>
 

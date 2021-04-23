@@ -3,9 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Helmet from 'react-helmet';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Weather App</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+    </Helmet>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
