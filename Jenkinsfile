@@ -6,10 +6,11 @@ pipeline {
         stage('Checkout') {
           steps {
             git(url: 'https://github.com/Anderrc/Weather.git', branch: 'main')
+            archiveArtifacts 'node_modules'
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             powershell 'git pull origin main'
           }
