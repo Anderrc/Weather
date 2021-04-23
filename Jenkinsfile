@@ -5,7 +5,6 @@ pipeline {
       parallel {
         stage('Checkout') {
           steps {
-            archiveArtifacts 'node_modules'
             git(url: 'https://github.com/Anderrc/Weather.git', branch: 'main')
           }
         }
