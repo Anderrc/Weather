@@ -2,8 +2,19 @@ pipeline {
   agent any
   stages {
     stage('checkout') {
-      steps {
-        powershell 'git pull origin main'
+      parallel {
+        stage('checkout') {
+          steps {
+            powershell 'git pull origin main'
+          }
+        }
+
+        stage('') {
+          steps {
+            git(url: 'https://github.com/Anderrc/Weather.git', branch: 'main')
+          }
+        }
+
       }
     }
 
