@@ -19,5 +19,15 @@ pipeline {
       }
     }
 
+    stage('publish') {
+      steps {
+        powershell 'cd build'
+        powershell 'git checkout build'
+        powershell 'git add . '
+        powershell 'git commit -am "add change jenkins"'
+        powershell 'git push origin build'
+      }
+    }
+
   }
 }
