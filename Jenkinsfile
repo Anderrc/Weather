@@ -2,8 +2,19 @@ pipeline {
   agent any
   stages {
     stage('Checkou') {
-      steps {
-        git(url: 'https://github.com/Anderrc/Weather', branch: 'main')
+      parallel {
+        stage('Checkou') {
+          steps {
+            git(url: 'https://github.com/Anderrc/Weather', branch: 'main')
+          }
+        }
+
+        stage('') {
+          steps {
+            powershell 'git pull origin main'
+          }
+        }
+
       }
     }
 
